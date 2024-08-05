@@ -1,0 +1,493 @@
+guid: cb04e13a-7969-42d5-9469-c3beb5182af6
+liveboard:
+  name: Retail sales Liveboard
+  description: Information about retail sales.
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Product sales with tax
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Sales Amount] [Product Name] [Quantity Purchased] [Sales Tax %] [Product Type]"
+      answer_columns:
+      - name: Product Name
+      - name: Product Type
+      - name: Total Quantity Purchased
+      - name: Total Sales Amount
+      - name: Total Sales Tax %
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Product Type
+          show_headline: false
+        - column_id: Total Quantity Purchased
+          show_headline: false
+        - column_id: Total Sales Amount
+          show_headline: false
+        - column_id: Total Sales Tax %
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Product Type
+        - Total Sales Amount
+        - Total Quantity Purchased
+        - Total Sales Tax %
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Total Sales Tax %\",\"width\": 165.0},{\"columnId\": \"Total Sales Amount\",\"width\": 172.0},{\"columnId\": \"Total Quantity Purchased\",\"width\": 201.0}],\"orderedColumnIds\": [\"Product Type\",\"Product Name\",\"Total Quantity Purchased\",\"Total Sales Amount\",\"Total Sales Tax %\"]}"
+      chart:
+        type: BUBBLE
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Product Type
+        - column_id: Total Quantity Purchased
+        - column_id: Total Sales Amount
+        - column_id: Total Sales Tax %
+        axis_configs:
+        - x:
+          - Total Sales Amount
+          "y":
+          - Total Quantity Purchased
+          size: Total Sales Tax %
+          category:
+          - Product Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Product Type\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity Purchased\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Tax %\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2a20e1bc-4820-44e4-833f-700c91dcd9bf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity Purchased\"],\"isOpposite\": false}},{\"id\": \"69c048f0-57bf-4719-a0d8-fcf24cf0f819\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Sales Amount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity Purchased\",\"color\": \"rgba(6,191,127,0.5)\"}],\"tooltipConfig\": {}}"
+      display_mode: TABLE_MODE
+      parameter_values:
+      - key: Sales Tax Rate
+        value: "7.8"
+    viz_guid: 941271b6-86fa-4777-a189-46a0e85d3917
+  - id: Viz_2
+    answer:
+      name: Total Sales
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Sales Amount] [Sales Date].weekly"
+      answer_columns:
+      - name: Total Sales Amount
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Total Sales Amount
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales Amount
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"059a1eb2-9786-4e70-b929-0541e47242e2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"a661eb65-12e5-464d-a80e-4b1c1b16835e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 80f5cf36-78db-4ae3-b738-f376f4d373f4
+  - id: Viz_3
+    answer:
+      name: Total Sales
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Sales Amount] [Sales Date].weekly"
+      answer_columns:
+      - name: Total Sales Amount
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Total Sales Amount
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales Amount
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"059a1eb2-9786-4e70-b929-0541e47242e2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"a661eb65-12e5-464d-a80e-4b1c1b16835e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 1a8a0268-b4f3-4532-811d-18fa94329f9a
+  - id: Viz_4
+    answer:
+      name: Total Qty Purchased
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Quantity Purchased] [Sales Date].weekly"
+      answer_columns:
+      - name: Total Quantity Purchased
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Total Quantity Purchased
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Quantity Purchased
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity Purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ba2cde1f-9422-42fd-81df-6492d0699003\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity Purchased\"],\"isOpposite\": false}},{\"id\": \"71d3f636-159c-4429-bac2-585cfad7690d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity Purchased\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 0d909e49-9a3b-4974-8a63-843f93aaee41
+  - id: Viz_5
+    answer:
+      name: Total Qty Purchased
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Quantity Purchased] [Sales Date].weekly"
+      answer_columns:
+      - name: Total Quantity Purchased
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Total Quantity Purchased
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Quantity Purchased
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Total Quantity Purchased
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity Purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ba2cde1f-9422-42fd-81df-6492d0699003\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity Purchased\"],\"isOpposite\": false}},{\"id\": \"71d3f636-159c-4429-bac2-585cfad7690d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity Purchased\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: bc46684e-d8f4-4a82-a38b-b6233329c1cd
+  - id: Viz_6
+    viz_guid: d8bf6687-d820-4c59-bc8a-af39edb3c0ce
+    note_tile:
+      html_parsed_string: "<h1><span>Product Sales</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span>The tabs in this liveboard are:</span></p><ul><li value=\"1\"><span>Product: shows sales by products.</span></li><li value=\"2\"><span>Geo: shows sales by geography.</span></li><li value=\"3\"><span>Goal Amount: shows sales goals.</span></li></ul>"
+  - id: Viz_7
+    viz_guid: 680b00dc-d464-4ec1-a966-f9cb25be59cc
+    note_tile:
+      html_parsed_string: <h1><span>Geographic Sales</span></h1><p class="theme-module__editor-paragraph" dir="ltr"><span>This liveboard tab shows sales by geographic detail.</span></p>
+  - id: Viz_8
+    answer:
+      name: Total Sales Amount by State
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "[Sales Amount] [State]"
+      answer_columns:
+      - name: State
+      - name: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: State
+          show_headline: false
+        - column_id: Total Sales Amount
+          show_headline: false
+        ordered_column_ids:
+        - State
+        - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: State
+        - column_id: Total Sales Amount
+        axis_configs:
+        - x:
+          - State
+          "y":
+          - Total Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"427db53d-2831-4118-966e-f7b9cccf275c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"1ff3cb29-94bd-433f-a2a4-b78334bc28c3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 38d3a856-4702-44df-9617-80325cc0f623
+  - id: Viz_9
+    answer:
+      name: Total Goal Amount by Goal Region
+      description: Total sales goal for each region - based on SQL view.
+      tables:
+      - id: Region Targets
+        name: Region Targets
+        fqn: 4067b9c1-3b5a-46d2-912f-203accad91e4
+      search_query: "[Goal Amount] [Goal Region]"
+      answer_columns:
+      - name: Goal Region
+      - name: Total Goal Amount
+      table:
+        table_columns:
+        - column_id: Goal Region
+          show_headline: false
+        - column_id: Total Goal Amount
+          show_headline: false
+        ordered_column_ids:
+        - Goal Region
+        - Total Goal Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Goal Region
+        - column_id: Total Goal Amount
+        axis_configs:
+        - x:
+          - Goal Region
+          "y":
+          - Total Goal Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Goal Region\",\"columnProperty\": {}},{\"columnId\": \"Total Goal Amount\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"b765abf2-61c5-43fa-bd16-2eb5383a2b7c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Goal Amount\"],\"isOpposite\": false}},{\"id\": \"d078cb35-1781-4eb9-bbc9-dce042630c7b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Goal Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Goal Amount\",\"color\": \"#48D1E0\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: c517e984-2780-43ef-ba07-e6ca1621d5e2
+  - id: Viz_10
+    answer:
+      name: Goal Amount by Goal Date
+      description: Total sales goal for each region - based on SQL view.
+      tables:
+      - id: Region Targets
+        name: Region Targets
+        fqn: 4067b9c1-3b5a-46d2-912f-203accad91e4
+      search_query: "[Goal Amount] [Goal Region] [Goal Date] [Goal Date].monthly"
+      answer_columns:
+      - name: Goal Region
+      - name: Month(Goal Date)
+      - name: Total Goal Amount
+      table:
+        table_columns:
+        - column_id: Goal Region
+          show_headline: false
+        - column_id: Month(Goal Date)
+          show_headline: false
+        - column_id: Total Goal Amount
+          show_headline: false
+        ordered_column_ids:
+        - Goal Region
+        - Month(Goal Date)
+        - Total Goal Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Goal Region
+        - column_id: Month(Goal Date)
+        - column_id: Total Goal Amount
+        axis_configs:
+        - x:
+          - Month(Goal Date)
+          "y":
+          - Total Goal Amount
+          color:
+          - Goal Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Goal Region\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Goal Amount\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Month(Goal Date)\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"43f4c120-74c8-4848-a874-b9f16ad72ca4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Goal Amount\"],\"isOpposite\": false}},{\"id\": \"d5ba0510-9aef-45fd-bed3-19179ca4e1fd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Goal Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Goal Amount\",\"color\": \"#FCC838\"},{\"serieName\": \"feb 2023\",\"color\": \"#2E75F0\"},{\"serieName\": \"mar 2023\",\"color\": \"#48D1E0\"},{\"serieName\": \"east\",\"color\": \"#2E75F0\"},{\"serieName\": \"midwest\",\"color\": \"#48D1E0\"},{\"serieName\": \"south\",\"color\": \"#FCC838\"},{\"serieName\": \"southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"west\",\"color\": \"#8C62F5\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: eefe8ca8-987f-451e-9afd-e0f815f6c33d
+  - id: Viz_11
+    answer:
+      name: Average Sales Amount
+      description: Average sales amount for weekly.
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "average [Sales Amount] [Sales Date].weekly"
+      answer_columns:
+      - name: Average Sales Amount
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Average Sales Amount
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Average Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Sales Amount
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Average Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Average Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e6cf35f-05cf-4c72-8807-6eb142c00db2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Sales Amount\"],\"isOpposite\": false}},{\"id\": \"606f5a78-5038-4ea8-979a-d235f9345f0a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Average Sales Amount\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: 16dcf80d-ebbb-464b-8efb-3cc4709819ae
+  - id: Viz_12
+    answer:
+      name: Average Sales Amount
+      description: Average sales amount for weekly.
+      tables:
+      - id: Retail Sales WS
+        name: Retail Sales WS
+        fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+      search_query: "average [Sales Amount] [Sales Date].weekly"
+      answer_columns:
+      - name: Average Sales Amount
+      - name: Week(Sales Date)
+      table:
+        table_columns:
+        - column_id: Average Sales Amount
+          show_headline: false
+        - column_id: Week(Sales Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sales Date)
+        - Average Sales Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Sales Amount
+        - column_id: Week(Sales Date)
+        axis_configs:
+        - x:
+          - Week(Sales Date)
+          "y":
+          - Average Sales Amount
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Week(Sales Date)\",\"columnProperty\": {}},{\"columnId\": \"Average Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3e6cf35f-05cf-4c72-8807-6eb142c00db2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Sales Amount\"],\"isOpposite\": false}},{\"id\": \"606f5a78-5038-4ea8-979a-d235f9345f0a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sales Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Average Sales Amount\",\"color\": \"#2770ef\"}],\"tooltipConfig\": {}}"
+      display_mode: CHART_MODE
+    viz_guid: e0c0fb87-a9fe-43e1-93c6-f6a058711986
+  filters:
+  - column:
+    - Retail Sales WS::Product Type
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Retail Sales WS::Region
+    oper: in
+    values:
+    - East
+    is_mandatory: false
+    is_single_value: true
+    display_name: ""
+  layout:
+    tabs:
+    - name: Products
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 8
+        width: 12
+      - visualization_id: Viz_2
+        x: 3
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_5
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_6
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_11
+        x: 6
+        "y": 0
+        height: 4
+        width: 3
+      id: d43e48df-ea1f-4e4c-aa81-8d246002c10a
+    - name: Geo
+      description: ""
+      tiles:
+      - visualization_id: Viz_3
+        x: 3
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_4
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_7
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_8
+        x: 0
+        "y": 4
+        height: 8
+        width: 12
+      - visualization_id: Viz_12
+        x: 6
+        "y": 0
+        height: 4
+        width: 3
+      id: d5c60812-0fc4-4d6a-9da7-9fd05a323fbb
+    - name: Goal Amount
+      description: ""
+      tiles:
+      - visualization_id: Viz_9
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_10
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: 9f695b01-03a3-4e58-ad0b-9ade35f71747

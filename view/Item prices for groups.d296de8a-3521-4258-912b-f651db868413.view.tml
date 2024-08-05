@@ -1,0 +1,39 @@
+guid: d296de8a-3521-4258-912b-f651db868413
+view:
+  name: Item prices for groups
+  description: TS view with aggregate prices.
+  tables:
+  - id: Retail Sales WS
+    name: Retail Sales WS
+    fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+  formulas:
+  - id: Average product type price
+    name: Average product type price
+    expr: "group_aggregate ( average ( [Item Price] ) , { [Product Type] } , query_filters ( ) )"
+    was_auto_generated: false
+  search_query: "[Product Type] [Product Name] [Item Price] [Average product type price]"
+  view_columns:
+  - name: Product Type
+    search_output_column: Product Type
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Product Name
+    search_output_column: Product Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Total Item Price
+    search_output_column: Total Item Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  - name: Average product type price
+    search_output_column: Average product type price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX

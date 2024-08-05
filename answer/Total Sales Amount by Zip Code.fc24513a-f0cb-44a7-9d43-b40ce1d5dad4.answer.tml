@@ -1,0 +1,35 @@
+guid: fc24513a-f0cb-44a7-9d43-b40ce1d5dad4
+answer:
+  name: Total Sales Amount by Zip Code
+  tables:
+  - id: Retail Sales WS
+    name: Retail Sales WS
+    fqn: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+  search_query: "[Sales Amount] [Zip Code]"
+  answer_columns:
+  - name: Total Sales Amount
+  - name: Zip Code
+  table:
+    table_columns:
+    - column_id: Total Sales Amount
+      show_headline: false
+    - column_id: Zip Code
+      show_headline: false
+    ordered_column_ids:
+    - Zip Code
+    - Total Sales Amount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: GEO_BUBBLE
+    chart_columns:
+    - column_id: Total Sales Amount
+    - column_id: Zip Code
+    axis_configs:
+    - x:
+      - Zip Code
+      "y":
+      - Total Sales Amount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0761255174985757E7,4839776.915609218],\"zoomLevel\": 4.363964533890174,\"extent\": [-1.3618037607257724E7,2992390.942740013,-7904472.74271379,6687162.8884784235]},\"chartSpecific\": {\"customProps\": \"{\\\"tileType\\\":\\\"outdoors-v9\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"453c3a6d-8c59-400a-86c7-a737960ee417\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"b2cb8d16-bde5-4989-9cfb-0ccd10396e87\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Zip Code\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#F04152\"}],\"tooltipConfig\": {}}"
+  display_mode: CHART_MODE
