@@ -1,0 +1,146 @@
+guid: a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526
+worksheet:
+  name: Retail Sales WS
+  tables:
+  - name: DIM_RETAPP_PRODUCTS
+    fqn: 8b38052d-95a4-4555-a0aa-94b4a0884969
+  - name: DIM_RETAPP_STORES
+    fqn: a85a5686-0281-4f8f-82d4-3ddd95bb95c5
+  - name: FACT_RETAPP_SALES
+    fqn: c23774ae-cf0c-4b21-a6e7-da313274c0c1
+  joins:
+  - name: C_DIM_RETAPP_STORES
+    source: FACT_RETAPP_SALES
+    destination: DIM_RETAPP_STORES
+    type: INNER
+    is_one_to_one: false
+  - name: C_DIM_RETAPP_PRODUCTS
+    source: FACT_RETAPP_SALES
+    destination: DIM_RETAPP_PRODUCTS
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: DIM_RETAPP_PRODUCTS_1
+    table: DIM_RETAPP_PRODUCTS
+    join_path:
+    - join:
+      - C_DIM_RETAPP_PRODUCTS
+  - id: DIM_RETAPP_STORES_1
+    table: DIM_RETAPP_STORES
+    join_path:
+    - join:
+      - C_DIM_RETAPP_STORES
+  - id: FACT_RETAPP_SALES_1
+    table: FACT_RETAPP_SALES
+    join_path:
+    - {}
+  formulas:
+  - name: Sales Tax (8%)
+    expr: "[FACT_RETAPP_SALES_1::Sales Amount] * [Sales Tax Rate] / 100"
+    was_auto_generated: false
+  worksheet_columns:
+  - name: Product Name
+    column_id: DIM_RETAPP_PRODUCTS_1::Product Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Product Type
+    column_id: DIM_RETAPP_PRODUCTS_1::Product Type
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Store Name
+    column_id: DIM_RETAPP_STORES_1::Store Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: City
+    column_id: DIM_RETAPP_STORES_1::City
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: State
+    column_id: DIM_RETAPP_STORES_1::State
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+  - name: Zip Code
+    column_id: DIM_RETAPP_STORES_1::Zip Code
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: zip code
+  - name: County
+    column_id: DIM_RETAPP_STORES_1::County
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: county
+  - name: Latitude
+    column_id: DIM_RETAPP_STORES_1::Latitude
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Longitude
+    column_id: DIM_RETAPP_STORES_1::Longitude
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Region
+    column_id: DIM_RETAPP_STORES_1::Region
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Quantity Purchased
+    column_id: FACT_RETAPP_SALES_1::Quantity Purchased
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Item Price
+    column_id: FACT_RETAPP_SALES_1::Item Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  - name: Sales Amount
+    column_id: FACT_RETAPP_SALES_1::Sales Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  - name: Sales Date
+    column_id: FACT_RETAPP_SALES_1::Sales Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Sales Tax %
+    formula_id: Sales Tax (8%)
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+  parameters:
+  - id: e974f0a5-f383-4baf-8586-e15dd3220623
+    name: Sales Tax Rate
+    data_type: DOUBLE
+    default_value: "0.0"

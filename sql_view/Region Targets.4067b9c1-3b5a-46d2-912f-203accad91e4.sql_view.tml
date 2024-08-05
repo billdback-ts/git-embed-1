@@ -1,0 +1,27 @@
+guid: 4067b9c1-3b5a-46d2-912f-203accad91e4
+sql_view:
+  name: Region Targets
+  description: Gets the regional targets for sales by region.
+  connection:
+    name: Retail Sales Data
+    fqn: ec07b957-d37f-4af6-8cd8-4c48e051c0b9
+  sql_query: "select r.region, r.goal_amt, r.goal_date from RETAILAPPAREL.PUBLIC.REGION_TARGETS AS r"
+  sql_view_columns:
+  - name: Goal Region
+    sql_output_column: REGION
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Goal Amount
+    sql_output_column: GOAL_AMT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+  - name: Goal Date
+    sql_output_column: GOAL_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
