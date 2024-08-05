@@ -1,0 +1,57 @@
+[ {
+  "originalGuid" : "1561b326-6768-4f8b-b45a-833bc1b7cf03",
+  "mappedGuid" : "62bdd286-78d3-4b14-b8f8-c50ddfe11160",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "8b38052d-95a4-4555-a0aa-94b4a0884969",
+  "mappedGuid" : "f755c0f0-8d63-4474-99cc-c47a82afb9cb",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "fc24513a-f0cb-44a7-9d43-b40ce1d5dad4",
+  "mappedGuid" : "29d808db-529d-41d8-a178-a980f7c4f082",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "c23774ae-cf0c-4b21-a6e7-da313274c0c1",
+  "mappedGuid" : "e32be0f5-cef2-4ff3-beda-9051183f7341",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "cb04e13a-7969-42d5-9469-c3beb5182af6",
+  "mappedGuid" : "18518105-b103-4db1-b317-09ab6bee6e73",
+  "counter" : 0,
+  "additionalMapping" : {
+    "bc46684e-d8f4-4a82-a38b-b6233329c1cd" : "640486c4-fcfb-450a-b099-63d28a11e1e9",
+    "e0c0fb87-a9fe-43e1-93c6-f6a058711986" : "2c222bbf-a85d-47ee-807a-bb10301fd10d",
+    "941271b6-86fa-4777-a189-46a0e85d3917" : "2a07d637-acc3-4d8c-a018-55eeb2c07791",
+    "1a8a0268-b4f3-4532-811d-18fa94329f9a" : "588bbc39-f48f-4a1a-b343-e3c6d943d522",
+    "0d909e49-9a3b-4974-8a63-843f93aaee41" : "d3c3d674-fba2-4734-9e31-9fc7825228a0",
+    "c517e984-2780-43ef-ba07-e6ca1621d5e2" : "2e247178-ea2a-4ed1-bbf0-e93183f961aa",
+    "80f5cf36-78db-4ae3-b738-f376f4d373f4" : "01b864d6-c3d6-41a1-aeb0-4f0bfe3225cf",
+    "38d3a856-4702-44df-9617-80325cc0f623" : "06936f02-3061-4f0b-a637-ab4ea4336601",
+    "eefe8ca8-987f-451e-9afd-e0f815f6c33d" : "adb0d953-d805-4bc1-a71e-684653291e86",
+    "16dcf80d-ebbb-464b-8efb-3cc4709819ae" : "573daac1-53ee-4d68-a9f1-2640fa274287"
+  }
+}, {
+  "originalGuid" : "a5fc94bc-1d0f-4fa9-b7b6-7ce4dc6bd526",
+  "mappedGuid" : "75da7456-60c1-4b64-8774-fb4523204fc3",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "d296de8a-3521-4258-912b-f651db868413",
+  "mappedGuid" : "f2090a33-7477-4d9a-8479-e282494c1128",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "a85a5686-0281-4f8f-82d4-3ddd95bb95c5",
+  "mappedGuid" : "61dea858-1655-4a34-a584-7963fc544041",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "4067b9c1-3b5a-46d2-912f-203accad91e4",
+  "mappedGuid" : "30f9052e-e12e-43b6-b87a-c7f396acc5e3",
+  "counter" : 0,
+  "additionalMapping" : { }
+} ]
